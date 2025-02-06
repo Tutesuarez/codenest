@@ -1,101 +1,103 @@
+'use client';
+import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
+import Navbar from "../components/NavBar";
+import Parallax from "../components/Paralax";
+import Footer from "../components/Footer";
+import { AnimatedText } from "../components/Title";
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen text-gray-900">
+      {/* Navbar */}
+      <Navbar/>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Banner Principal */}
+      <header className="relative h-screen w-full flex items-center px-20">
+        <Image
+          src="/image/banner_1.jpg"
+          alt="Fondo"
+          layout="fill"
+          objectFit="cover"
+          className="-z-10"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+
+        <div className="titulo_container relative z-10 text-start items-center flex-inline w-2/4 h-2/4">
+        <AnimatedText
+            el="h2"
+            text={[
+              "Creando experiencias",
+              "digitales inolvidables",
+            ]}
+            className="text-4xl md:text-5xl titulo"
+            repeatDelay={3000}
+          />
+          {/* <h1 className="text-4xl md:text-5xl font-bold titulo ">Creando experiencias <br/> digitales inolvidables</h1> */}
+          <motion.p 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }} 
+           className="mt-4 text-lg">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
+          <Link href="/contacto">
+          <button  className="mt-6 px-6 py-3 bg-stone-50 text-stone-900 hover:bg-inherit hover:border-2  font-semibold rounded-full shadow-lg">
+            Charlemos
+          </button>
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </header>
+<Parallax>
+
+
+      {/* ¿Qué Hacemos? */}
+      <section id="que-hacemos" className="p-10 justify-items-center">
+        <div className="w-3/4 text-center my-10">
+        <h2 className="text-3xl font-bold">¿Qué hacemos?</h2>
+        <p className="mt-4">Brindamos soluciones digitales para empresas y emprendedores.
+          <br/> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </p>
+        </div>
+      </section>
+
+      {/* Servicios */}
+      <section id="servicios" className="p-10 bg-gray-200 text-center h-screen">
+        <h2 className="text-3xl font-bold">Nuestros Servicios</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          {['Desarrollo Web', 'Web Apps', 'SEO', 'Diseño Gráfico', 'Mantenimiento Web'].map((servicio, index) => (
+            <motion.div
+              key={index}
+              className="p-6 bg-white rounded-lg shadow-md"
+              whileHover={{ scale: 1.05 }}
+            >
+              <h3 className="text-xl font-semibold">{servicio}</h3>
+              <p className="mt-2 text-gray-600">Breve descripción del servicio.</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Tu Primera Web */}
+      <section id="tu-primera-web" className="p-10 text-center h-screen">
+        <h2 className="text-3xl font-bold">Tu Primera Web</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          {["Básico", "Intermedio", "Avanzado"].map((plan, index) => (
+            <motion.div
+              key={index}
+              className="p-6 bg-white rounded-lg shadow-md"
+              whileHover={{ scale: 1.05 }}
+            >
+              <h3 className="text-xl font-semibold">Plan {plan}</h3>
+              <p className="mt-2 text-gray-600">Detalles del plan.</p>
+              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">Contratar</button>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+      </Parallax>
+      {/* Footer */}
+      <Footer/>
     </div>
   );
 }

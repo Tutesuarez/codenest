@@ -10,6 +10,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        backgroundImage:{
+          bannerImg:"url('/image/banner_1.jpg')",
+          blackOverlay:
+          "linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)",
+        },
       },
     },
   },
