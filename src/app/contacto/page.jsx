@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 
- function contacto() {
+export default function contacto() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
@@ -67,7 +67,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
           <button 
             type="submit" 
-            className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition"
+            className="w-full bg-stone-900 text-white py-3 rounded-lg hover:bg-white hover:text-stone-900 hover:border-2 hover:border-stone-900 transition"
           >
             Enviar Mensaje
           </button>
@@ -82,11 +82,12 @@ import { Mail, MapPin, Phone } from "lucide-react";
         >
           <div className="flex items-center space-x-4">
             <Mail className="text-blue-500" size={24} />
-            <p className="text-lg">contacto@ejemplo.com</p>
+            <p className="text-lg">code.nest.valencia@gmail.com</p>
           </div>
           <div className="flex items-center space-x-4">
             <Phone className="text-blue-500" size={24} />
-            <p className="text-lg">+34 123 456 789</p>
+            <p className="text-lg">+34 627 165 711</p>
+            <p className="text-lg">+34 672 324 653</p>
           </div>
           <div className="flex items-center space-x-4">
             <MapPin className="text-blue-500" size={24} />
@@ -96,7 +97,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
           {/* Mapa (Opcional) */}
           <iframe 
             className="w-full h-64 rounded-lg shadow-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086165!2d144.9537353155087!3d-37.8162797420215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5dfbcf2f6f%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1574672141196!5m2!1sen!2sau"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197293.81412812247!2d-0.5263220258635876!3d39.40793427407375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses-419!2ses!4v1738943826281!5m2!1ses-419!2ses"
             loading="lazy"
           ></iframe>
         </motion.div>
@@ -104,5 +105,3 @@ import { Mail, MapPin, Phone } from "lucide-react";
     </div>
   );
 }
-
-export default contacto

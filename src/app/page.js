@@ -2,9 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "../components/NavBar";
 import Parallax from "../components/Paralax";
-import Footer from "../components/Footer";
 import { AnimatedText } from "../components/Title";
 
 
@@ -12,7 +10,7 @@ export default function Home() {
 
   const servObj=[
     {servicio:'Desarrollo Web', descripcion:'Creamos sitios web modernos, optimizados y adaptables a cualquier dispositivo a medida. Tiendas online, e-learning, landing pages', img:'/image/desarrolloweb.svg'}, 
-    {servicio:'Web Apps', descripcion:'Aplicaciones web interactivas y escalables para mejorar la experiencia del usuario.', img:'/image/webapp.svg'}, 
+    {servicio:'Aplicaciones Apps', descripcion:'Aplicaciones web interactivas y escalables para mejorar la experiencia del usuario.', img:'/image/webapp.svg'}, 
     {servicio:'Mantenimiento Web',descripcion:'Nos encargamos de la seguridad, actualizaciones y rendimiento de tu sitio web.', img:'/image/mantenimiento.svg'}, 
     {servicio:'SEO', descripcion:"Optimizamos tu sitio para mejorar su visibilidad en buscadores y atraer más tráfico.", img:'/image/seo_img.jpg'}, 
     {servicio:'Diseño Gráfico', descripcion:"Diseñamos identidades visuales atractivas y materiales gráficos impactantes", img:'/image/diseño_grafico_img.jpg'}]
@@ -20,9 +18,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-gray-900">
-      {/* Navbar */}
-      <Navbar/>
-
           {/* Banner Principal */}
     <header className="relative h-screen w-full flex items-center px-20">
       <Image
@@ -49,7 +44,7 @@ export default function Home() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }} 
          className="mt-4 text-lg text-stone-50 md:text-stone-900">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
-        <Link href='/Contacto/Contacto'>
+        <Link href='/contacto'>
         <button  className="mt-6 px-6 py-3 bg-stone-50 text-stone-900 hover:bg-inherit hover:border-2  font-semibold rounded-full shadow">
           Charlemos
         </button>
@@ -111,8 +106,6 @@ export default function Home() {
       </div>
     </section>
     </Parallax>
-      {/* Footer */}
-      <Footer/>
     </div>
   );
 }

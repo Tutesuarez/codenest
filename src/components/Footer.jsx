@@ -1,14 +1,14 @@
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 const Footer = () => {
     return (
         <footer className="bg-gray-950 text-white text-center p-6">
             {/* Sección superior con el logo y botón */}
             <div className="flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto text-center md:text-left">
                 <div className="w-full md:w-2/4 text-center">
-                <Link href="#">
+                <Link href="/">
                     <h2 className="text-4xl md:text-6xl font-bold">
                         <span className="brackets text-red-800">&#123;</span>CODE
                         <span className="brackets text-red-800">&#125;</span>NEST
@@ -18,12 +18,10 @@ const Footer = () => {
                 </div>
                 <div className='justify-items-center'>
                 <Link href="/contacto">
-                <motion.button
-                    className="px-6 py-3  bg-stone-50 text-stone-900 hover:bg-inherit hover:border-2 hover:text-stone-50 font-semibold rounded-full mt-4 md:mt-0"
-                    whileHover={{ scale: 1.1 }}
-                >
+                <button
+                    className="px-6 py-3  bg-stone-50 text-stone-900 hover:bg-inherit hover:border-2 hover:text-stone-50 font-semibold rounded-full mt-4 md:mt-0">
                     Contáctanos
-                </motion.button>
+                </button>
                 </Link>
             {/* Sección de los íconos de redes sociales */}
             <div className="flex justify-center space-x-6 mt-4">
