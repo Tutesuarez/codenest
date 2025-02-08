@@ -14,7 +14,9 @@
   padding: 0;
 }
 
-
+.container_titulo{
+  width:93.33% ;
+}
 
 .titulo{
   font-family: 'Montserrat-bold';

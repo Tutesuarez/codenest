@@ -31,12 +31,12 @@ export const AnimatedText = ({
 
   useEffect(() => {
     let timeout
-    const show = () => {
-      controls.start("visible");
+    const show = async () => {
+      await controls.start("visible");
       if (repeatDelay) {
         timeout = setTimeout(async () => {
           await controls.start("hidden");
-          controls.start("visible");
+          await controls.start("visible");
         }, repeatDelay);
       }
     };
@@ -48,11 +48,11 @@ export const AnimatedText = ({
     }
 
     return () => clearTimeout(timeout);
-  }, [isInView]);
+  }, [isInView, controls]);
 
   return (
     <Wrapper className={className}>
-      <span className="sr-only">{textArray.join(" ")}</span>
+      <span className="sr-only ">{textArray.join(" ")}</span>
       <motion.span
         ref={ref}
         initial="hidden"

@@ -26,16 +26,16 @@ export default function Home() {
         fill
         className="-z-10 object-cover"
       />
-      <div className="absolute inset-0 bg-black bg-opacity-30 md:bg-opacity-10"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 md:bg-opacity-10"></div>
 
-      <div className="titulo_container relative z-10 text-start items-center flex-inline w-4/4 h-2/4 md:w-2/4">
+      <div className="container_titulo relative z-10 text-start items-center flex-inline h-2/4 md:w-2/4">
       <AnimatedText
-          el="h2"
+          el="h1"
           text={[
             "Creando experiencias",
             "digitales inolvidables",
           ]}
-          className="text-4xl md:text-5xl titulo text-stone-50 md:text-stone-900 "
+          className="text-4xl md:text-6xl titulo text-stone-50 shadow- md:text-stone-900 "
           repeatDelay={3000}
         />
         {/* <h1 className="text-4xl md:text-5xl font-bold titulo ">Creando experiencias <br/> digitales inolvidables</h1> */}

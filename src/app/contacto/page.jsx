@@ -91,13 +91,13 @@ export default function contacto() {
           </div>
           <div className="flex items-center space-x-4">
             <MapPin className="text-blue-500" size={24} />
-            <p className="text-lg">Madrid, España</p>
+            <p className="text-lg">Valencia, España</p>
           </div>
 
           {/* Mapa (Opcional) */}
           <iframe 
             className="w-full h-64 rounded-lg shadow-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197293.81412812247!2d-0.5263220258635876!3d39.40793427407375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses-419!2ses!4v1738943826281!5m2!1ses-419!2ses"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.3017364438215!2d-0.3685905!3d39.4625116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60491d346cdb31%3A0x40e1255181654df0!2sLlavor%20Urb%C3%A0!5e0!3m2!1sen!2ses!4v1738975279596!5m2!1sen!2ses"
             loading="lazy"
           ></iframe>
         </motion.div>
