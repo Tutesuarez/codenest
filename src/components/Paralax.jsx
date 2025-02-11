@@ -23,7 +23,7 @@ import { userAgent } from 'next/server';
     // scale
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
     const scale2 = useSpring(useTransform(scrollYProgress, [0, 1], [0.85, 1]));
-    const opacity = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 0.50], [1, 0]);
     const opacity2 = useTransform(scrollYProgress, [0, 0.60], [1, 0]);
   
   

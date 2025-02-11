@@ -1,5 +1,6 @@
 'use client';
 
+import Parallax from "@/components/Paralax";
 import RevealText from "@/components/TextReveal";
 import { motion } from "framer-motion";
 import Image from 'next/image'
@@ -8,16 +9,18 @@ import Image from 'next/image'
 export default function Servicios() {
 
   return (
-    <div className="">
+    <div className="justify-items-center">
       <div className="justify-items-center mt-8">
         <h1 className="text-3xl md:text-6xl font-bold">Nuestros Servicios</h1>
       </div>
-      <RevealText>
+     
+        <div className="md:mx-32">
+
       <div className="flex flex-col lg:flex-row mt-10 p-5 mx-5">
         <div className="mb-4 lg:mb-0 lg:pe-10">
           <Image
             className="rounded-lg"
-            src="/image/desarrolloweb.svg"
+            src="/image/wordpress.jpg"
             width={350}
             height={350}
             alt="Desarrollo web"
@@ -104,7 +107,9 @@ export default function Servicios() {
           </p>
         </div>
       </div>
-      </RevealText>
+
+      </div>
+ 
  
     </div>
 
