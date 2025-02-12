@@ -8,20 +8,20 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-stone-50 shadow-md">
+    <nav className="sticky top-0 z-50 bg-stone-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}<Link href="/">
-          <p className="text-2xl logo text-stone-900"><span className="brackets text-red-800">&#123;</span>CODE<span className="brackets text-red-800">&#125;</span>NEST
+          <p className="text-2xl logo text-stone-50"><span className="brackets text-red-800">&#123;</span>CODE<span className="brackets text-red-800">&#125;</span>NEST
           </p>
           </Link>
 
           {/* Menú en pantallas grandes */}
           <ul className="hidden md:flex space-x-6">
-            <li><Link href="/#que-hacemos" className="text-gray-700 hover:text-stone-950">Qué Hacemos</Link></li>
-            <li><Link href="/servicios" className="text-gray-700 hover:text-stone-950">Servicios</Link></li>
-            <li><Link href="/#tu-primera-web" className="text-gray-700 hover:text-stone-950">Tu Primera Web</Link></li>
-            <li><Link href="/contacto" className="text-gray-700 hover:text-stone-950">Contacto</Link></li>
+            <li><Link href="/#que-hacemos" className="text-stone-50 hover:text-white">Qué Hacemos</Link></li>
+            <li><Link href="/servicios" className="text-stone-50 hover:text-white">Servicios</Link></li>
+            <li><Link href="/#tu-primera-web" className="text-stone-50 hover:text-white">Tu Primera Web</Link></li>
+            <li><Link href="/contacto" className="text-stone-50 hover:text-white">Contacto</Link></li>
           </ul>
 
           {/* Botón de menú móvil */}
