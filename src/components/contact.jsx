@@ -22,7 +22,7 @@ const ContactForm = () => {
           type="text"
           id="name"
           required
-          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 text-white placeholder:text-gray-500"
+          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 text-white placeholder:text-gray-500"
           placeholder="Juan Pedro"
         />
       </div>
@@ -32,7 +32,7 @@ const ContactForm = () => {
           type="email"
           id="email"
           required
-          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 text-white placeholder:text-gray-500"
+          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 text-white placeholder:text-gray-500"
           placeholder="next@service.com"
         />
       </div>
@@ -42,14 +42,14 @@ const ContactForm = () => {
           id="message"
           required
           rows={4}
-          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 text-white placeholder:text-gray-500 resize-none"
+          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 text-white placeholder:text-gray-500 resize-none"
           placeholder="Como podemos ayudarte.."
         />
       </div>
       <button
         type="submit"
         disabled={loading}
-        className="w-full px-6 py-3 bg-stone-50 text-stone-900 rounded-lg font-medium flex items-center justify-center gap-2 hover:bg-stone-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full px-6 py-3 bg-teal-400 text-stone-900 rounded-lg font-medium flex items-center justify-center gap-2 hover:bg-teal-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {loading ? (
           "Sending..."

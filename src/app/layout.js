@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
 
-      <body className={` ${montserrat.variable}  bg-black`}>
+      <body className={` ${montserrat.variable} bg-stone-950`}>
         <Navbar/>
         <main>{children}</main>
         <Footer/>
