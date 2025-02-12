@@ -51,25 +51,25 @@ export default function Home() {
       {/* Banner Principal */}
       <header className="relative h-screen w-full flex justify-center  items-center">
         <Image
-          src="/image/banner_1.jpg"
+          src="/image/background.jpg"
           alt="Banner"
           fill
           className="-z-10 object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 md:bg-opacity-90"
+        <div className="absolute inset-0 bg-black bg-opacity-70  md:bg-opacity-90"
           style={{
-            WebkitMaskImage: `radial-gradient(circle 100px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 10%)`,
-            maskImage: `radial-gradient(circle 100px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%)`,
+            WebkitMaskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 10%)`,
+            maskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%)`,
           }}></div>
 
-        <div className="container_titulo relative z-10 text-center flex flex-col items-center ">
+        <div className="container_titulo relative z-10 text-start md:text-center  w-5/6 md:w-full flex flex-col items-center ">
           <AnimatedText
             el="h1"
             text={[
               "Creando experiencias",
               "digitales inolvidables",
             ]}
-            className="text-4xl md:text-6xl titulo text-stone-50 "
+            className="text-4xl md:text-6xl titulo text-stone-50 mb-2"
             repeatDelay={3000}
           />
           {/* <h1 className="text-4xl md:text-5xl font-bold titulo ">Creando experiencias <br/> digitales inolvidables</h1> */}
@@ -77,7 +77,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="mt-4 text-lg text-stone-50">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
+            className="mt-6 text-xl text-stone-50">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
           <Link href='/contacto'>
             <button className="mt-6 px-6 py-3 bg-stone-50 text-stone-900 hover:text-stone-50 hover:bg-inherit hover:border-2  font-semibold rounded-full shadow">
               Charlemos
@@ -226,7 +226,7 @@ export default function Home() {
 
       </section>
       </Parallax>
-      <section id="contact" className="py-32">
+      <section id="contact" className="py-32 px-10 md:h-screen">
         <div className="container">
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div 
@@ -247,10 +247,12 @@ export default function Home() {
                 <Mail className="text-stone-50" size={24} />
                 <p className="text-lg text-stone-50">code.nest.valencia@gmail.com</p>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center  md:space-x-4">
                 <Phone className="text-stone-50" size={24} />
+                <div className="flex-col ps-5 md:flex md:flex-row md:px-0 md:space-x-4">
                 <p className="text-lg text-stone-50">+34 627 165 711</p>
                 <p className="text-lg text-stone-50">+34 672 324 653</p>
+                </div>
               </div>
               <div className="flex items-center space-x-4">
                 <MapPin className="text-stone-50" size={24} />

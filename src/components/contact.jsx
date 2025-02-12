@@ -23,7 +23,7 @@ const ContactForm = () => {
           id="name"
           required
           className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 text-white placeholder:text-gray-500"
-          placeholder="John Doe"
+          placeholder="Juan Pedro"
         />
       </div>
       <div className="space-y-2">
@@ -33,7 +33,7 @@ const ContactForm = () => {
           id="email"
           required
           className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 text-white placeholder:text-gray-500"
-          placeholder="john@example.com"
+          placeholder="next@service.com"
         />
       </div>
       <div className="space-y-2">
@@ -43,7 +43,7 @@ const ContactForm = () => {
           required
           rows={4}
           className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 text-white placeholder:text-gray-500 resize-none"
-          placeholder="Tell us about your project..."
+          placeholder="Como podemos ayudarte.."
         />
       </div>
       <button

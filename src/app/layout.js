@@ -1,18 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
-});
+})
+
 
 export const metadata = {
   title: "CODENEST | Soluciones digitales",
@@ -24,9 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-stone-900`}
-        >
+      <body className={` ${montserrat.variable}  bg-black`}>
         <Navbar/>
         <main>{children}</main>
         <Footer/>
