@@ -25,7 +25,7 @@ export async function POST(req) {
       from: process.env.EMAIL_USER,
       to: "suarezmatiasjose@gmail.com",
       subject: `Nuevo mensaje de ${nombre} `,
-      Html:`
+      html:`
       <h1>De: ${nombre}</h1>
       <p>${email}</p>
       <p>${mensaje}</p>`,
