@@ -1,3 +1,4 @@
+import { Html } from "next/document";
 import nodemailer from "nodemailer";
 
 export async function POST(req) {
@@ -15,14 +16,21 @@ export async function POST(req) {
         user: process.env.EMAIL_USER, // Configura en .env.local
         pass: process.env.EMAIL_PASS, // Configura en .env.local
       },
+      tls: {
+        rejectUnauthorized: false, 
+      },
     });
 
     // Configurar el correo
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "destino@correo.com", // Cambia esto por el correo donde quieres recibir los mensajes
-      subject: "Nuevo mensaje de contacto",
-      text: `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`,
+      to: "suarezmatiasjose@gmail.com",
+      subject: `Nuevo mensaje de ${nombre} `,
+      Html:`
+      <h1>De: ${nombre}</h1>
+      <p>${email}</p>
+      <p>${mensaje}</p>`,
+    //   text: `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`,
     };
 
     // Enviar correo
