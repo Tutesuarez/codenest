@@ -13,6 +13,8 @@ import ContactForm from "@/components/contact";
 import ProcessSteps from "@/components/ServicesCard";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { LuChevronDown } from "react-icons/lu";
+import InfiniteScroll from "@/components/webs";
+import InfiniteImageScroll from "@/components/webs";
 
 
 
@@ -27,6 +29,10 @@ export default function Home() {
     return () => window.removeEventListener("mousemove", updateMousePosition);
   }, []);
 
+  const images = [
+    {src:"./image/web1.jpg" },
+    {src:"./image/web2.jpg"}
+  ];
   const services = [
     { icon: <CheckCircle size={24} className="text-teal-400" />, title: "Diseño de Logo", description: "Un logo profesional y único para tu marca." },
     { icon: <MonitorSmartphone size={24} className="text-teal-400" />, title: "Página Web Profesional", description: "Moderna, rápida y adaptable a móviles." },
@@ -48,13 +54,13 @@ export default function Home() {
           fill
           className="-z-10 object-cover"
         />
-        
+
         <div className="absolute inset-0 bg-neutral-950 bg-opacity-70  md:bg-opacity-90"
           style={{
             WebkitMaskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 10%)`,
             maskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%)`,
           }}></div>
-          
+
 
         <div className="container_titulo relative z-10 text-start md:text-center  w-5/6 md:w-full flex flex-col items-center ">
           <AnimatedText
@@ -78,12 +84,12 @@ export default function Home() {
             </button>
           </Link>
         </div>
-          <div className="relative z-10 items-end">
+        <div className="relative z-10 items-end">
           <Link href="#que-hacemos">
-             <LuChevronDown size={84} className="text-teal-400"/>
+            <LuChevronDown size={84} className="text-teal-400" />
           </Link>
         </div>
-       
+
       </header>
       <Parallax>
         {/* ¿Qué Hacemos? */}
@@ -100,7 +106,22 @@ export default function Home() {
               </RevealText>
             </div>
             <div className="flex justify-center">
-              <p>aca van las graficas</p>
+              {/*efectoo */}
+              <div style={{ height: "500px", position: "relative" }}>
+      <InfiniteScroll
+        items={images}
+        isTilted={true}
+        tiltDirection="rigth"
+        autoplay={true}
+        autoplaySpeed={0.5}
+        autoplayDirection="down"
+        pauseOnHover={true}
+        width="40rem"         // MÁS ANCHO
+        itemMinHeight={600}   // MÁS ALTO
+        maxHeight="100vh"      // AJUSTA EL MÁXIMO ALTO
+        negativeMargin="-4em" // MENOS ESPACIO ENTRE IMÁGENES
+      />
+    </div>
             </div>
           </div>
         </section>
