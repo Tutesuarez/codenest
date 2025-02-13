@@ -1,4 +1,3 @@
-import { Html } from "next/document";
 import nodemailer from "nodemailer";
 
 export async function POST(req) {
