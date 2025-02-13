@@ -21,13 +21,13 @@ const Pack=()=>{
                 <motion.h2
                   initial={{ opacity: 0, y: -30 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5 }} className="text-4xl font-bold">¡Lanza tu negocio sin complicaciones con nuestro<span className="bg-teal-400 rounded-md text-stone-950"> Pack Emprendedor!</span>
+                  transition={{ duration: 0.5 }} className="text-4xl w-4/5 md:w-full font-bold text-start">¡Lanza tu negocio sin complicaciones con nuestro<span className="bg-teal-400 rounded-md text-stone-950"> Pack Emprendedor!</span>
                 </motion.h2>
 
                 <motion.p initial={{ opacity: 0, y: -30 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5 }}
-                  className="mt-5 w-4/5">
+                  className="mt-5  md:w-4/5">
                   Si estás abriendo tu negocio, sabemos que hay mil cosas en qué pensar. Por eso, hemos creado un pack completo para que tengas una imagen profesional y una presencia online lista desde el primer día.
                 </motion.p>
               </div>
@@ -41,7 +41,8 @@ const Pack=()=>{
                     initial={{ opacity: 0, x: -50 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.9, delay: index * 0.2 }}>
-                    {service.icon}
+                    <span className="text-3xl ">{service.icon}</span>
+                    
                     <div>
                       <h3 className="text-xl font-semibold">{service.title}</h3>
                       <p className="text-gray-600">{service.description}</p>

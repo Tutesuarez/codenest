@@ -19,7 +19,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-     <SplashCursor/>
+      <div className="hidden md:block">
+        <SplashCursor/>
+
+      </div>
       {/* Banner Principal */}
       <header className="relative h-screen w-full flex flex-col justify-center  items-center">
         <Banner />
@@ -77,7 +80,7 @@ export default function Home() {
         </section>
 
         {/* Promo para los que recien arranacan */}
-        <section id="promo" className="p-20  md:h-screen text-stone-50" >
+        <section id="promo" className="p-10 md:p-20  md:h-screen text-stone-50" >
           <Pack />
         </section>
       </Parallax>

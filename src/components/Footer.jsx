@@ -30,7 +30,7 @@ const Footer = () => {
 
                 {/* Derechos reservados alineados a la derecha */}
                 <p className="mt-4 md:mt-6 text-gray-400 text-center md:text-right">
-                    © 2025 Todos los derechos reservados.
+                    © 2025 Todos los derechos reservados. |  <Link href='./privacidad' >Politicas de privacidad </Link>
                 </p>
             </div>
             </div>

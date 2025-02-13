@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { Send } from "lucide-react";
@@ -84,6 +85,9 @@ const ContactForm = () => {
           <Send className="w-4 h-4" />
         </>}
       </button>
+      <div>
+      <Link href='./privacidad'><p className="text-center text-stone-500">Al enviar su consulta acepta la Politicas de privacidad</p></Link>
+      </div>
     </form>
   );
 };
