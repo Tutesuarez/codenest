@@ -1,33 +1,3 @@
-// import { motion } from "framer-motion";
-
-// export default function InfiniteImageScroll({ images = [], speed = 30 }) {
-//   return (
-//     <div className="relative overflow-hidden w-full h-[300px] flex items-center bg-black">
-//       <motion.div
-//         className="flex gap-6"
-//         animate={{ x: ["0%", "-100%"] }}
-//         transition={{
-//           ease: "linear",
-//           duration: speed,
-//           repeat: Infinity,
-//         }}
-//       >
-//         {[...images, ...images].map((img, index) => (
-//           <div key={index} className="w-64 h-64 flex-shrink-0">
-//             <img
-//               src={img.src}
-//               alt={`scroll-image-${index}`}
-//               className="w-full h-full object-cover rounded-lg shadow-lg"
-//             />
-//           </div>
-//         ))}
-//       </motion.div>
-//     </div>
-//   );
-// }
-
-// InfiniteScroll.jsx
-
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { Observer } from "gsap/Observer";
@@ -162,7 +132,7 @@ export default function InfiniteScroll({
 
   return (
     <div
-      className="relative flex items-center justify-center w-full overflow-hidden"
+      className="relative flex items-center justify-center md:w-full overflow-hidden"
       ref={wrapperRef}
       style={{ maxHeight }}
     >
@@ -182,7 +152,7 @@ export default function InfiniteScroll({
             style={{
               height: `${itemMinHeight}px`,
               marginTop: negativeMargin,
-              transform: "scale(1.5)"
+              transform: "scale(2.5)"
             }}
           >
             <img
