@@ -7,6 +7,8 @@ import Banner from "@/components/banner";
 import Pack from "@/components/pack";
 import ContactContainer from "@/components/ContactContainer";
 import SplashCursor from "@/components/splash";
+import ServicioEcommerce from "@/components/Ecommerce";
+import RevealTextSegundo from "@/components/TextReveal2";
 
 
 
@@ -20,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <div className="hidden md:block">
-        <SplashCursor/>
+        <SplashCursor />
 
       </div>
       {/* Banner Principal */}
@@ -42,6 +44,7 @@ export default function Home() {
             </div>
             <div className="justify-end">
               {/*efectoo */}
+              <RevealTextSegundo>
               <div className="max-w-screen-sm md:w-full relative object-cover hidden md:block">
                 <InfiniteScroll
                   items={images}
@@ -57,26 +60,34 @@ export default function Home() {
                   negativeMargin="10rem" // MENOS ESPACIO ENTRE IMÁGENES
                 />
               </div>
+              </RevealTextSegundo>
             </div>
           </div>
         </section>
 
         {/* Servicios */}
-        <section id="servicios" className="py-32 bg-stone-950">
+        <section id="servicios" className="py-10 bg-stone-950">
           <div className=" flex flex-col justify-items-center">
             <div className=" text-center max-w-2xl mx-auto  justify-items-center space-y-4 text-stone-50">
               <div className="mb-10 max-w-fit">
                 <p className=" text-teal-400  font-bold">Servicios</p>
               </div>
+              <RevealTextSegundo>
               <h2 className="text-4xl font-heading font-bold">
                 Soluciones digitales para tu negocio
               </h2>
               <p className="text-gray-400">
                 Todo lo que necesitas para establecer tu presencia digital.
               </p>
+              </RevealTextSegundo>
             </div>
             <ProcessSteps />
           </div>
+        </section>
+
+        {/*servicio 2 */}
+        <section id="servicios_b" className="p-5 md:py-5 bg-stone-950 text-stone-50">
+          <ServicioEcommerce/>
         </section>
 
         {/* Promo para los que recien arranacan */}

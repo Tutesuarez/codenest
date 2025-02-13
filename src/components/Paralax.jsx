@@ -15,6 +15,7 @@ import { userAgent } from 'next/server';
     const hero = Children.toArray(children)[0];
     const section = Children.toArray(children)[1];
     const tup = Children.toArray(children)[2]
+    const serv = Children.toArray(children)[3]
 
   
     // motion stuff
@@ -25,6 +26,7 @@ import { userAgent } from 'next/server';
     const scale2 = useSpring(useTransform(scrollYProgress, [0, 1], [0.85, 1]));
     const opacity = useTransform(scrollYProgress, [0, 0.50], [1, 0]);
     const opacity2 = useTransform(scrollYProgress, [0, 0.60], [1, 0]);
+
   
   
     // debug
@@ -37,7 +39,8 @@ import { userAgent } from 'next/server';
           {hero}
         </motion.div>
         <motion.div style={{ scale: scale2, y: -1, opacity2, }}>{section}</motion.div>
-        <motion.div style={{ scale: scale2, y: -1 }}>{tup}</motion.div>
+        <motion.div style={{ scale: scale2, y: -1, opacity2 }}>{tup}</motion.div>
+        <motion.div style={{ scale: scale2, y: -1 }}>{serv}</motion.div>
       </motion.div>
     );
   }
