@@ -1,41 +1,48 @@
-import { useState } from "react";
 import Link from "next/link";
-import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { Send } from "lucide-react";
+import { useState, useRef } from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com"; // Importa EmailJS
+
 
 const ContactForm = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const [loading, setLoading] = useState(false);
 
+  const form = useRef()
+
   const onSubmit = async (data) => {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      // Envía el correo usando EmailJS
+     
+      
+      
+      const response = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID, // Tu ID de servicio de EmailJS
+        process.env.NEXT_PUBLIC_TEMPLATE_ID, // Tu ID de plantilla de EmailJS
+        form.current, // Los datos del formulario
+        process.env.NEXT_PUBLIC_USER_ID // Tu ID de usuario de EmailJS
+    );
 
-      const result = await response.json();
-
-      if (response.ok) {
-        toast.success(result.message);
-        reset()
+      if (response.status === 200) {
+        toast.success("¡Mensaje enviado correctamente!"); // Notificación de éxito
+        reset();  // Resetea el formulario
       } else {
-        toast.error(result.message);
+        toast.error("Hubo un problema al enviar el mensaje."); // Si algo sale mal
       }
     } catch (error) {
       console.error("Error:", error);
       toast.error("Hubo un problema al enviar el mensaje.");
     } finally {
-      setLoading(false);
+      setLoading(false); // Finaliza el estado de carga
     }
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-full max-w-md">
+    <form ref={form} onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-full max-w-md">
       <div className="space-y-2">
         <label htmlFor="name" className="text-sm font-medium text-gray-200">Nombre</label>
         <input
@@ -80,13 +87,13 @@ const ContactForm = () => {
         disabled={loading}
         className="w-full px-6 py-3 bg-teal-400 text-stone-900 rounded-lg font-medium flex items-center justify-center gap-2 hover:bg-teal-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {loading ? "Enviando..." : <>
-          Enviar mensaje
-          <Send className="w-4 h-4" />
-        </>}
+        {loading ? "Enviando..." : <><span>Enviar mensaje</span><Send className="w-4 h-4" /></>}
       </button>
+
       <div>
-      <Link href='./privacidad'><p className="text-center text-stone-500">Al enviar su consulta acepta la Politicas de privacidad</p></Link>
+        <Link href="./privacidad">
+          <p className="text-center text-stone-500">Al enviar su consulta acepta la Política de privacidad</p>
+        </Link>
       </div>
     </form>
   );
