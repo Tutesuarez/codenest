@@ -22,21 +22,20 @@ const Banner = () => {
 
   return (
     <>
-      <Image
+      <img
         src="/image/background.jpg"
         alt="Banner"
-        fill
-        className="-z-10 object-cover"
-      />
+        className="absolute inset-0 object-cover w-full h-full -z-10"
+      ></img>
 
-      <div className="absolute inset-0 bg-neutral-950 bg-opacity-70  md:bg-opacity-90"
+      <div className="absolute z-10 inset-0 bg-neutral-950 bg-opacity-70  md:bg-opacity-90 "
         style={{
           WebkitMaskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 10%)`,
           maskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%)`,
         }}></div>
 
 
-      <div className="container_titulo relative z-10 text-start md:text-center  w-5/6 md:w-full flex flex-col items-center ">
+      <div className="container_titulo relative z-20 text-start md:text-center  w-5/6 md:w-full flex flex-col items-center  ">
         <AnimatedText
           el="h1"
           text={[
