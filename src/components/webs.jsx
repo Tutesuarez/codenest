@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { Observer } from "gsap/Observer";
+import Image from "next/image";
 
 gsap.registerPlugin(Observer);
 
@@ -155,10 +156,12 @@ export default function InfiniteScroll({
               transform: "scale(2.5)"
             }}
           >
-            <img
+            <Image
               src={item.src}
               alt={`scroll-image-${i}`}
               className="w-full h-full object-contain"
+              width={500}
+              height={500}
             />
           </div>
         ))}

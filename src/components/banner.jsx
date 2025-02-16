@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { AnimatedText } from "../components/Title";
 import Link from "next/link";
@@ -8,13 +8,17 @@ import Image from "next/image";
 const Banner = () => {
   const [mousePosition, setMousePosition] = useState({ x: -200, y: -200 });
 
-  useEffect(() => {
-    const updateMousePosition = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener("mousemove", updateMousePosition);
-    return () => window.removeEventListener("mousemove", updateMousePosition);
+ 
+  const updateMousePosition = useCallback((e) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
   }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => requestAnimationFrame(() => updateMousePosition(e));
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, [updateMousePosition]);
+
 
   return (
     <>
@@ -63,3 +67,4 @@ const Banner = () => {
 }
 
 export default Banner
+

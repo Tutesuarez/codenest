@@ -4,8 +4,8 @@ import RevealTextSegundo from "@/components/TextReveal2";
 
 const Quehacemos=()=>{
     const images = [
-        { src: "./image/web1.jpg" },
-        { src: "./image/web2.jpg" }
+        { src: "/image/web1.jpg" },
+        { src: "/image/web2.jpg" }
       ];
     
     return(

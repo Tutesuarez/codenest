@@ -13,8 +13,6 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <div className="hidden md:block">
-        
-
       </div>
       {/* Banner Principal */}
       <header className="relative h-screen w-full flex flex-col justify-center  items-center">
@@ -57,6 +55,7 @@ export default function Home() {
           <Pack />
         </section>
       </Parallax>
+
       <section id="contacto" className="py-32 px-10 ">
         <ContactContainer />
       </section>
