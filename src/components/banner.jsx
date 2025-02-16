@@ -22,7 +22,7 @@ const Banner = () => {
 
   return (
     <>
-      <img
+      <Image
         src="/image/background.jpg"
         alt="Banner"
         fill
