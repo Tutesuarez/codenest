@@ -7,7 +7,7 @@ const ServicioEcommerce=()=>{
     return(
         <>
         <div className="container mx-auto text-center md:text-left md:px-20">
-            <p className="text-teal-400 font-bold text-lg">Nuestros Servicios</p>
+            <p className="text-teal-400 font-bold text-lg">TU PLATAFORMA OLNLINE</p>
             <RevealTextSegundo>
             <h2 className="text-3xl md:text-5xl font-bold mt-2">Creamos Soluciones Digitales a Medida</h2>
             <p className="mt-6 text-lg md:text-xl text-stone-300">En <span className="font-bold bg-teal-400 text-stone-900 p-1 rounded-md">CODENEST</span> diseñamos y desarrollamos plataformas digitales que potencian negocios. Desde tiendas online hasta plataformas de aprendizaje, ofrecemos soluciones personalizadas con tecnologías modernas.</p>

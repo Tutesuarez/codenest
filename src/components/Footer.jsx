@@ -4,8 +4,8 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-950 text-white text-center p-6">
-            <div className="flex flex-col md:grid md:grid-cols-2 mx-16">
+        <footer className="bg-stone-950 text-white text-center p-6 ">
+            <div className="flex flex-col md:grid md:grid-cols-2 mx-16 border-t-2 border-t-stone-50 border-opacity-10 md:py-3">
 
             {/* Sección superior con el logo y botón */}
             <div className="flex flex-col md:flex-row justify-items-center items-center max-w-4xl md:ms-text-center">

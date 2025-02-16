@@ -49,11 +49,11 @@ const Banner = () => {
           className="mt-6 text-xl text-stone-50">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
         <Link href='#contacto'>
           <button className="mt-6 px-6 py-3 bg-teal-400 text-stone-950 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full shadow">
-            Charlemos
+            HABLEMOS
           </button>
         </Link>
       </div>
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10">
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10">
         <Link href="#que-hacemos">
           <LuChevronDown size={84} className="text-stone-50 animate-bounce" />
         </Link>

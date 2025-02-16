@@ -18,7 +18,7 @@ const ContactContainer=()=>{
             >
               <div className="space-y-8">
                 <div className="max-w-fit">
-                  <p className="text-teal-400 font-bold">Contáctenos</p>
+                  <p className="text-teal-400 font-bold">CONTACTENOS</p>
                 </div>
                 <h2 className="text-4xl font-heading font-bold text-stone-50">
                   Creemos algo increíble juntos
