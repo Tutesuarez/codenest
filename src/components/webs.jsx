@@ -156,12 +156,10 @@ export default function InfiniteScroll({
               transform: "scale(2.5)"
             }}
           >
-            <Image
+            <img
               src={item.src}
               alt={`scroll-image-${i}`}
               className="w-full h-full object-contain"
-              width={500}
-              height={500}
             />
           </div>
         ))}
