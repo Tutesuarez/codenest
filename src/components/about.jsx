@@ -4,8 +4,8 @@ import RevealTextSegundo from "@/components/TextReveal2";
 
 const Quehacemos=()=>{
     const images = [
-        { src: "/image/web1.jpg" },
-        { src: "/image/web2.jpg" }
+        { src: "/image/web1.webp" },
+        { src: "/image/web2.webp" }
       ];
     
     return(
@@ -14,7 +14,7 @@ const Quehacemos=()=>{
             <div className=" text-center my-10 md:mt-2 md:text-start md:ps-30 md:w-11/12 md:flex flex-col justify-center">
               <p className="text-teal-400 font-bold mb-3">¿QUE HACEMOS?</p>
               <RevealText>
-                <h3 className="text-2xl font-bold mt-1 md:text-6xl md:mt-2">Transformamos tu presencia digital y llevamos tu negocio al siguiente nivel</h3>
+                <h2 className="text-2xl font-bold mt-1 md:text-6xl md:mt-2">Transformamos tu presencia digital y llevamos tu negocio al siguiente nivel</h2>
                 <p className="mt-10 md:text-2xl">En <span className="font-bold  bg-teal-400 text-stone-950 md:mt-5 p-1 rounded-md">CODENEST</span>,creamos y optimizamos la identidad digital de tu negocio. Desde diseño y desarrollo web hasta mantenimiento, branding y SEO técnico, te ofrecemos soluciones completas para que tu empresa destaque en internet.
                 </p>
               </RevealText>

@@ -39,8 +39,8 @@ const ServicioEcommerce=()=>{
             </div>
           </div>
             <div className="container text-center mt-10">
-                <button className="bg-teal-400 text-stone-950 p-3 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full"> 
-                    <Link href="/#contacto">Evaluemos tu proyecto!</Link>
+                <button className="bg-teal-400 text-stone-950 py-3 px-6 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full"> 
+                    <Link href="/#contacto" alt='down-button' className="down-button">Evaluemos tu proyecto!</Link>
                 </button>
             </div>
         </>

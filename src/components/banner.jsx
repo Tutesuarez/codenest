@@ -23,7 +23,7 @@ const Banner = () => {
   return (
     <>
       <img
-        src="/image/background.jpg"
+        src="/image/background.webp"
         alt="Banner"
         className="absolute inset-0 object-cover w-full h-full -z-10"
       ></img>
