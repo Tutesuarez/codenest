@@ -19,9 +19,9 @@ export default function Navbar() {
 
           {/* Menú en pantallas grandes */}
           <ul className="hidden md:flex space-x-6">
-            <li><Link href="/#que-hacemos" className="text-stone-50 hover:text-white">Qué Hacemos</Link></li>
-            <li><Link href="/#servicios" className="text-stone-50 hover:text-white">Servicios</Link></li>
-            <li><Link href="/#contacto" className="text-stone-50 hover:text-white">Contacto</Link></li>
+            <li><Link href="/#que-hacemos" className="text-stone-50 hover:text-teal-400">Qué Hacemos</Link></li>
+            <li><Link href="/#servicios" className="text-stone-50 hover:text-teal-400">Servicios</Link></li>
+            <li><Link href="/#contacto" className="text-stone-50 hover:text-teal-400">Contacto</Link></li>
           </ul>
 
           {/* Botón de menú móvil */}
@@ -36,12 +36,12 @@ export default function Navbar() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
         transition={{ duration: 0.3 }}
-        className={`absolute top-16 left-0 w-full bg-white shadow-md md:hidden ${isOpen ? "block" : "hidden"}`}
+        className={`absolute top-16 left-0 w-full bg-stone-950 shadow-md md:hidden ${isOpen ? "block" : "hidden"}`}
       >
         <ul className="flex flex-col space-y-4 p-4">
-          <li><Link href="/#que-hacemos" className="text-gray-700 hover:text-blue-500" onClick={() => setIsOpen(false)}>Qué Hacemos</Link></li>
-          <li><Link href="/#servicios" className="text-gray-700 hover:text-blue-500" onClick={() => setIsOpen(false)}>Servicios</Link></li>
-          <li><Link href="/#contacto" className="text-gray-700 hover:text-blue-500" onClick={() => setIsOpen(false)}>Contacto</Link></li>
+          <li className="text-stone-50 border-b-2 border-teal-400 hover:text-teal-400"><Link href="/#que-hacemos" className="" onClick={() => setIsOpen(false)}>Qué Hacemos</Link></li>
+          <li className="text-stone-50 border-b-2 border-teal-400 hover:text-teal-400"><Link href="/#servicios"  onClick={() => setIsOpen(false)}>Servicios</Link></li>
+          <li className="text-stone-50 border-b-2 border-teal-400 hover:text-teal-400"><Link href="/#contacto"  onClick={() => setIsOpen(false)}>Contacto</Link></li>
         </ul>
       </motion.div>
     </nav>
