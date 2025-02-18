@@ -1,12 +1,11 @@
 'use client';
 import Parallax from "../components/Paralax";
-import ProcessSteps from "@/components/ServicesCard";
 import Banner from "@/components/banner";
 import Pack from "@/components/pack";
 import ContactContainer from "@/components/ContactContainer";
 import ServicioEcommerce from "@/components/Ecommerce";
-import RevealTextSegundo from "@/components/TextReveal2";
 import Quehacemos from "@/components/about";
+import ServicesContainer from "@/components/ServicesContainer";
 
 export default function Home() {
 
@@ -21,28 +20,13 @@ export default function Home() {
       <Parallax>
 
         {/* ¿Qué Hacemos? */}
-        <section id="que-hacemos" className="p-5 md:py-10  md:h-screen justify-items-center bg-stone-950 text-stone-50">
+        <section id="que-hacemos" className="p-5 md:py-10  md:h-screen justify-items-center bg-stone-950 text-stone-50 overflow-hidden">
           <Quehacemos/>          
         </section>
 
         {/* Servicios */}
-        <section id="servicios" className="py-10 bg-stone-950">
-          <div className=" flex flex-col justify-items-center">
-            <div className=" text-center max-w-2xl mx-auto mt-5 justify-items-center space-y-2 text-stone-50">
-              <div className="mb-8 mt-10 max-w-fit">
-                <p className=" text-teal-400  font-bold">SERVICIOS</p>
-              </div>
-              <RevealTextSegundo>
-              <h2 className="text-4xl font-heading font-bold">
-                Soluciones digitales para tu negocio
-              </h2>
-              <p className="text-gray-400">
-                Todo lo que necesitas para establecer tu presencia digital.
-              </p>
-              </RevealTextSegundo>
-            </div>
-            <ProcessSteps />
-          </div>
+        <section id="servicios" className="py-10 bg-stone-950 md:h-screen">
+          <ServicesContainer/>
         </section>
 
         {/*servicio 2 */}
@@ -51,12 +35,12 @@ export default function Home() {
         </section>
 
         {/* Promo para los que recien arranacan */}
-        <section id="promo" className="p-10 md:p-20  md:h-screen text-stone-50" >
+        <section id="promo" className="promo_section p-10 xl:p-5 md:p-20  md:h-screen text-stone-50" >
           <Pack />
         </section>
       </Parallax>
 
-      <section id="contacto" className="py-32 px-10 ">
+      <section id="contacto" className="py-32 px-10 md:h-screen ">
         <ContactContainer />
       </section>
     </div>

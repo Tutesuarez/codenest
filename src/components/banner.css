@@ -1,0 +1,32 @@
+
+@media(min-width: 1920px) {
+
+    .container_title{
+        flex: none !important;
+        width: 2000px !important;
+    }
+    .titulo_banner{
+        font-size: 130px;
+        line-height: 150px;
+
+    }
+    .description_banner{
+        font-size: 45px;
+
+    }
+    .btn_banner{
+        padding-top: 25px;
+        padding-bottom:25px ;
+        padding-left: 36px;
+        padding-right: 36px;
+        margin-top: 90px;
+        font-size: 38px;
+
+    }
+    .bottom-12{
+        bottom: 125px;
+    }
+
+
+  }
+  

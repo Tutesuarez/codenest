@@ -1,0 +1,27 @@
+
+@media(min-width: 1920px) {
+
+    /*----- about us ------*/
+    .title-aboutus{
+      font-size: 70px;
+    }
+
+    .text-aboutus{
+        margin-top: 70px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .section-title{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .btn-aboutus{
+        font-size: 22px;
+        margin-top: 70px;
+    }
+
+  }
+  
+  

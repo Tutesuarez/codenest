@@ -133,7 +133,7 @@ export default function InfiniteScroll({
 
   return (
     <div
-      className="relative flex items-center justify-center md:w-full overflow-hidden"
+      className="relative flex items-center justify-center md:w-full overflow-cover"
       ref={wrapperRef}
       style={{ maxHeight }}
     >

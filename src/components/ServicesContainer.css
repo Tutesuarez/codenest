@@ -1,0 +1,54 @@
+
+@media(min-width: 1920px) {
+
+    /*----- Services container ------*/
+    .serv_title{
+        margin-top: 100px;
+        font-size: 24px;
+    }
+    .serv_principal_title{
+      font-size: 85px;
+      margin-bottom: 20px;
+      margin-top: 100px;
+    }
+
+    .serv_principal_text{
+        padding-top: 10px;
+        margin-top: 40px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .container-services{
+        max-width: 2000px;
+        margin-top: 150px;
+    }
+   
+    .cards-services{
+        width: 350px;
+    }
+
+    .step-number{
+        font-size: 200px;
+    }
+
+    .puntos{
+        margin-top: 20px;
+        height: 32px;
+        width: 32px;
+    }
+    .step-title{
+        margin-top: 40px;
+        font-size: 40px;
+        max-width: 300px;
+        line-height: 55px;
+    }
+    
+    .step-description{
+        margin-top: 35px;
+        font-size:25px;
+        max-width: 300px;
+    }
+
+  }
+  

@@ -24,3 +24,9 @@
   font-family:'Montserrat-Bold';
 }
 
+@media(min-width: 1920px) {
+  
+  .promo_section{
+  padding: 5px;
+  }
+}

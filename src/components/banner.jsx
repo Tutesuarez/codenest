@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { AnimatedText } from "../components/Title";
 import Link from "next/link";
 import { LuChevronDown } from "react-icons/lu";
-import Image from "next/image";
+import './banner.css'
 
 const Banner = () => {
   const [mousePosition, setMousePosition] = useState({ x: -200, y: -200 });
@@ -35,29 +35,29 @@ const Banner = () => {
         }}></div>
 
 
-      <div className="container_titulo relative z-20 text-start md:text-center  w-5/6 md:w-full flex flex-col md:items-center  ">
+      <div className="container_title relative z-20 text-start md:text-center  w-5/6 md:w-full flex flex-col md:items-center  ">
         <AnimatedText
           el="h1"
           text={[
             "Creando experiencias",
             "digitales inolvidables",
           ]}
-          className="text-4xl md:text-6xl titulo text-stone-50 mb-2"
+          className="titulo_banner text-4xl xl:text-6xl md:text-6xl titulo text-stone-50 mb-2"
           repeatDelay={3000}
         />
         <motion.p
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="mt-6 text-xl text-stone-50">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
+          className="description_banner mt-6 text-xl text-stone-50">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
         <Link href='#contacto'>
-          <button className="mt-6 px-6 py-3 bg-teal-400 text-stone-950 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full shadow">
+          <button className="btn_banner mt-6 px-6 py-3 bg-teal-400 text-stone-950 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full shadow">
             HABLEMOS
           </button>
         </Link>
       </div>
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10">
-        <Link href="#que-hacemos">
+        <Link href="#que-hacemos" className='aboutus-button' alt='aboutus-button'>
           <LuChevronDown size={84} className="text-stone-50 animate-bounce" />
         </Link>
       </div>

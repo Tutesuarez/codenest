@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react"; // Iconos para abrir/cerrar menú
 import Link from "next/link";
+import './Navbar.css'
 
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-stone-950 font-Ralway font-light">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" container_navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}<Link href="/">
           <p className="text-2xl logo text-stone-50"><span className="brackets text-red-800">&#123;</span>CODE<span className="brackets text-red-800">&#125;</span>NEST
@@ -18,14 +19,14 @@ export default function Navbar() {
           </Link>
 
           {/* Menú en pantallas grandes */}
-          <ul className="hidden md:flex space-x-6">
+          <ul className="hidden md:flex space-x-6 menu-bignav">
             <li><Link href="/#que-hacemos" className="text-stone-50 hover:text-teal-400  focus:text-teal-400">Qué Hacemos</Link></li>
             <li><Link href="/#servicios" className="text-stone-50 hover:text-teal-400 focus:text-teal-400">Servicios</Link></li>
             <li><Link href="/#contacto" className="text-stone-50 hover:text-teal-400 focus:text-teal-400">Contacto</Link></li>
           </ul>
 
           {/* Botón de menú móvil */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-gray-700">
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-gray-700 burguer-button" alt='' >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div> 
