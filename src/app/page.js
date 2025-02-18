@@ -28,8 +28,8 @@ export default function Home() {
         {/* Servicios */}
         <section id="servicios" className="py-10 bg-stone-950">
           <div className=" flex flex-col justify-items-center">
-            <div className=" text-center max-w-2xl mx-auto  justify-items-center space-y-4 text-stone-50">
-              <div className="mb-10 max-w-fit">
+            <div className=" text-center max-w-2xl mx-auto mt-5 justify-items-center space-y-2 text-stone-50">
+              <div className="mb-8 mt-10 max-w-fit">
                 <p className=" text-teal-400  font-bold">SERVICIOS</p>
               </div>
               <RevealTextSegundo>
@@ -46,7 +46,7 @@ export default function Home() {
         </section>
 
         {/*servicio 2 */}
-        <section id="servicios_b" className="p-5 md:py-5 bg-stone-950 text-stone-50">
+        <section id="servicios_b" className="p-5 md:py-5 bg-stone-950 text-stone-50 justify-items-center">
           <ServicioEcommerce/>
         </section>
 

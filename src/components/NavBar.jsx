@@ -19,9 +19,9 @@ export default function Navbar() {
 
           {/* Menú en pantallas grandes */}
           <ul className="hidden md:flex space-x-6">
-            <li><Link href="/#que-hacemos" className="text-stone-50  focus:text-teal-400">Qué Hacemos</Link></li>
-            <li><Link href="/#servicios" className="text-stone-50 focus:text-teal-400">Servicios</Link></li>
-            <li><Link href="/#contacto" className="text-stone-50 focus:text-teal-400">Contacto</Link></li>
+            <li><Link href="/#que-hacemos" className="text-stone-50 hover:text-teal-400  focus:text-teal-400">Qué Hacemos</Link></li>
+            <li><Link href="/#servicios" className="text-stone-50 hover:text-teal-400 focus:text-teal-400">Servicios</Link></li>
+            <li><Link href="/#contacto" className="text-stone-50 hover:text-teal-400 focus:text-teal-400">Contacto</Link></li>
           </ul>
 
           {/* Botón de menú móvil */}
@@ -39,7 +39,7 @@ export default function Navbar() {
         className={`absolute top-16 left-0 w-full bg-stone-950 shadow-md md:hidden ${isOpen ? "block" : "hidden"}`}
       >
         <ul className="flex flex-col space-y-4 p-4">
-          <li className="text-stone-50 border-b-2 border-teal-400 focus:text-teal-400"><Link href="/#que-hacemos" className="" onClick={() => setIsOpen(false)}>Qué Hacemos</Link></li>
+          <li className="text-stone-50 border-b-2 border-teal-400 hover:text-teal-400"><Link href="/#que-hacemos" className="" onClick={() => setIsOpen(false)}>Qué Hacemos</Link></li>
           <li className="text-stone-50 border-b-2 border-teal-400 hover:text-teal-400"><Link href="/#servicios"  onClick={() => setIsOpen(false)}>Servicios</Link></li>
           <li className="text-stone-50 border-b-2 border-teal-400 hover:text-teal-400"><Link href="/#contacto"  onClick={() => setIsOpen(false)}>Contacto</Link></li>
         </ul>
