@@ -35,7 +35,7 @@ export default function Home() {
         </section>
 
         {/* Promo para los que recien arranacan */}
-        <section id="promo" className="promo_section p-10 xl:p-5 md:p-20  md:h-screen text-stone-50" >
+        <section id="promo" className="promo_section p-10 xl:p-5 md:p-20  md:h-screen text-stone-50 justify-items-center" >
           <Pack />
         </section>
       </Parallax>

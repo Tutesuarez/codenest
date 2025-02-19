@@ -35,7 +35,7 @@ const Banner = () => {
         }}></div>
 
 
-      <div className="container_title relative z-20 text-start md:text-center  w-5/6 md:w-full flex flex-col md:items-center  ">
+      <div className="container_title_b relative z-20 text-start md:text-center  w-5/6 md:w-full xl:w-screen flex flex-col md:items-center  ">
         <AnimatedText
           el="h1"
           text={[

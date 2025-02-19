@@ -5,7 +5,29 @@
 }
 
 
+
 @media(min-width: 1920px) {
+    /*----- Navb ------*/
+
+    .logo{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 35px;
+    }
+    .menu-bignav{
+        font-size: 30px;
+    }
+    .container_navbar{
+        max-width: 1800px;
+    }
+
+   
+
+
+  }
+
+
+@media(min-width: 2560px) {
     /*----- Navb ------*/
 
     .logo{

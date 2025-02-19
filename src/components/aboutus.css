@@ -1,15 +1,52 @@
 
+
 @media(min-width: 1920px) {
+
+  .container_section{
+    max-width: 1800px;
+  }
 
     /*----- about us ------*/
     .title-aboutus{
-      font-size: 70px;
+      font-size: 60px !important;
+      width: 100%;
+      line-height: 75px;
     }
 
     .text-aboutus{
+        margin-top: 50px !important;
+        font-size: 30px !important;
+        line-height: 55px !important;
+    }
+
+    .section-title{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .btn-aboutus{
+        font-size: 22px;
         margin-top: 70px;
-        font-size: 45px;
-        line-height: 55px;
+    }
+
+  }
+  
+  
+
+
+@media(min-width: 2560px) {
+
+    /*----- about us ------*/
+    .title-aboutus{
+      font-size: 70px !important;
+      width: 100%;
+      line-height: 75px;
+    }
+
+    .text-aboutus{
+        margin-top: 70px !important;
+        font-size: 45px !important;
+        line-height: 55px !important;
     }
 
     .section-title{

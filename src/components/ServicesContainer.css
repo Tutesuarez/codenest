@@ -4,6 +4,62 @@
     /*----- Services container ------*/
     .serv_title{
         margin-top: 100px;
+        font-size: 20px;
+    }
+    .serv_principal_title{
+      font-size: 75px;
+      margin-bottom: 20px;
+      margin-top: 100px;
+    }
+
+    .serv_principal_text{
+        padding-top: 10px;
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .container-services{
+        max-width: 1800px;
+        margin-top: 45px;
+        margin-bottom: 70px;
+    }
+   
+    .cards-services{
+        width: 350px;
+    }
+
+    .step-number{
+        font-size: 200px;
+    }
+
+    .puntos{
+        margin-top: 20px;
+        height: 22px;
+        width: 22px;
+    }
+    .step-title{
+        margin-top: 40px;
+        font-size: 35px;
+        max-width: 300px;
+        line-height: 55px;
+    }
+    
+    .step-description{
+        margin-top: 25px;
+        font-size:25px;
+        max-width: 300px;
+    }
+
+  }
+  
+
+
+@media(min-width: 2560px) {
+
+    /*----- Services container ------*/
+    .serv_title{
+        margin-top: 100px;
         font-size: 24px;
     }
     .serv_principal_title{

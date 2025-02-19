@@ -16,9 +16,9 @@ const Pack=()=>{
       const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
     return(
         <>
-        <div className="container_section flex flex-col md:grid grid-cols-2 justify-items-center" ref={ref}>
+        <div className="container_section_pack flex flex-col md:grid grid-cols-2" ref={ref}>
             <RevealText>
-              <div className="container_titles flex flex-col md:max-w-lg ">
+              <div className="container_titles flex flex-col md:max-w-lg  justify-items-start">
                 <div className="titles_title">
                 <motion.h2
                   initial={{ opacity: 0, y: -30 }}
@@ -38,7 +38,7 @@ const Pack=()=>{
               </div>
             </RevealText>
             {/* Caracteristicas pack emprendedor */}
-            <div className="conatiner_items_pack">
+            <div className="conatiner_items_pack justify-items-end md:justify-items-center">
               <ul className="list_items space-y-10 mt-5">
                 {services.map((service, index) => (
                   <motion.li key={index}
@@ -60,7 +60,7 @@ const Pack=()=>{
 
           <div className="text-center mt-10 md:mt-20">
             <RevealText >
-              <p className="sub-text font-semibold text-lg md:text-2xl">Tú te enfocas en hacer crecer tu negocio, nosotros nos encargamos de tu presencia digital.</p>
+              <p className="sub-text font-semibold text-lg md:text-xl">Tú te enfocas en hacer crecer tu negocio, nosotros nos encargamos de tu presencia digital.</p>
             </RevealText>
           </div>
           </>

@@ -3,6 +3,80 @@
 
     /*-----  ------*/
 
+    .container_ecom{
+       margin-top: 100px;
+
+    }
+    .container_title_ecom{
+        max-width: 1800px;
+        padding: 0px;
+    }
+
+    .title-eco_serv{
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+
+    .title_eco{
+        font-size: 60px;
+        margin-bottom: 55px;
+      }
+
+      .description_ecom{
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 55px;
+      }
+  
+
+    .cards_container_ecom{
+        max-width: 1800px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 90px;
+
+    }
+
+    .item_ecom{
+        height: 88px;
+        width: 88px;
+        margin-bottom: 10px;
+    }
+
+    .title_card_eco{
+        font-size: 30px;
+    }
+
+    .description_card_eco{
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .card_ecom{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .btn-container-eco{
+        margin-top: 100px;
+    }
+    .btn_ecom{
+        font-size: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+
+  }
+
+
+@media(min-width: 2560px) {
+
+    /*-----  ------*/
+
     .container_title_ecom{
         max-width: 2000px;
         padding: 0px;
