@@ -1,4 +1,8 @@
 
+.cards-services{
+    max-width: 400px;
+}
+
 @media(min-width: 1920px) {
 
     /*----- Services container ------*/

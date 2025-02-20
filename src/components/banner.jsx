@@ -51,7 +51,7 @@ const Banner = () => {
           transition={{ duration: 0.5 }}
           className="description_banner mt-6 text-xl text-stone-50">Creamos soluciones digitales para potenciar tu negocio.</motion.p>
         <Link href='#contacto'>
-          <button className="btn_banner mt-6 px-6 py-3 bg-teal-400 text-stone-950 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full shadow">
+          <button className="btn_banner mt-16 sm:mt-6 px-6 py-3 bg-teal-400 text-stone-950 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full shadow flex justify-self-center sm:justify-self-start">
             HABLEMOS
           </button>
         </Link>

@@ -13,7 +13,7 @@ const ServicesContainer=()=>{
               <h2 className="serv_principal_title text-4xl font-heading font-bold">
                 Soluciones digitales para tu negocio
               </h2>
-              <p className="text-gray-400 serv_principal_text">
+              <p className="text-gray-400 serv_principal_text mt-4 max-w-80 sm:max-w-full justify-self-center text-center">
                 Todo lo que necesitas para establecer tu presencia digital.
               </p>
               </RevealTextSegundo>

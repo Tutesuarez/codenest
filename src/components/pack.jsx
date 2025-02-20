@@ -38,8 +38,8 @@ const Pack=()=>{
               </div>
             </RevealText>
             {/* Caracteristicas pack emprendedor */}
-            <div className="conatiner_items_pack justify-items-end md:justify-items-center">
-              <ul className="list_items space-y-10 mt-5">
+            <div className="conatiner_items_pack justify-items-end md:justify-items-center mt-4 sm:mt-0">
+              <ul className="list_items space-y-6 sm:space-y-10 mt-5">
                 {services.map((service, index) => (
                   <motion.li key={index}
                     className="flex items-center space-x-4"

@@ -14,21 +14,21 @@ export default function ProcessSteps() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="w-full flex flex-col items-center py-16 ">
+    <div className="w-full flex flex-col items-center py-10 sm:py-16 ">
    
-      <div className="container-services relative w-full md:max-w-6xl  mt-10 flex flex-col md:flex-row md:justify-between items-center md:items-start">
+      <div className="container-services relative w-full md:max-w-6xl mt-0  sm:mt-10 flex flex-col md:flex-row md:justify-between items-center md:items-start">
 
         {steps.map((step, index) => (
           <motion.div
           key={index}
-          className="cards-services relative z-10 flex flex-col items-center text-center transition-opacity w-60 h-auto"
+          className="cards-services relative z-10 flex sm:flex-col items-center text-center transition-opacity  w-full  sm:w-60 h-auto"
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
           animate={{ opacity: hoveredIndex === null || hoveredIndex === index ? 1 : 0.3 }}
           >
             {/* Número */}
             <motion.span
-              className="step-number text-9xl font-bold text-teal-400"
+              className="step-number  text-7xl  sm:text-9xl font-bold text-teal-400"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.1 }}
             >
@@ -39,12 +39,15 @@ export default function ProcessSteps() {
           {/* <div className="absolute top-1/2 w-full border-t-2 border-stone-200 hidden md:block "></div> */}
             {/* Punto con línea */}
             <div className="relative flex items-center justify-center">
-              <div className=" puntos w-4 h-4 bg-blue-500 rounded-full mt-2"></div>
+              <div className=" puntos w-4 h-4 bg-blue-500 rounded-full mt-2 hidden sm:block"></div>
             </div>
 
             {/* Título y descripción */}
-            <h3 className="step-title text-xl font-bold mt-2 text-stone-50">{step.title}</h3>
-            <p className="step-description text-gray-400 mt-1 max-w-48 break-words whitespace-normal">{step.description}</p>
+            <div className=" flex flex-col text-start px-3 mb-6 sm:mb-0 sm:ps-0  sm:text-center">
+            <h3 className="step-title text-xl  font-bold mt-2 text-stone-50">{step.title}</h3>
+            <p className="step-description text-gray-400 mt-1 max-w-full sm:max-w-48 break-words whitespace-normal">{step.description}</p>
+
+            </div>
           </motion.div>
         ))}
       </div>

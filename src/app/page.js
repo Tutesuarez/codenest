@@ -20,7 +20,7 @@ export default function Home() {
       <Parallax>
 
         {/* ¿Qué Hacemos? */}
-        <section id="que-hacemos" className="p-5 md:py-10  md:h-screen justify-items-center bg-stone-950 text-stone-50 overflow-hidden">
+        <section id="que-hacemos" className="p-5 md:py-10 justify-items-start sm:justify-items-center md:h-screen  bg-stone-950 text-stone-50 overflow-hidden">
           <Quehacemos/>          
         </section>
 
