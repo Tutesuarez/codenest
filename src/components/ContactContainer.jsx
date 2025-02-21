@@ -29,7 +29,7 @@ const ContactContainer=()=>{
                 </p>
                 <div className=" flex items-center space-x-4">
                   <Mail className="icons_contact text-stone-50" size={24} />
-                  <p className="contact_info text-lg text-stone-50">code.nest.valencia@gmail.com</p>
+                  <p className="contact_info text-lg text-stone-50">info@codenest.es</p>
                 </div>
                 <div className=" flex items-center  md:space-x-4">
                   <Phone className="icons_contact text-stone-50" size={24} />
