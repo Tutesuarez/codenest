@@ -5,7 +5,7 @@ import './ServicesContainer.css'
 const steps = [
   { number: "01", title: "Desarrollo Web", description: "Creamos sitios web modernos, optimizados y adaptables a cualquier dispositivo a medida. Tiendas online, e-learning, landing pages" },
   { number: "02", title: "Aplicaciones Web", description: "Aplicaciones web interactivas y escalables para mejorar la experiencia del usuario." },
-  { number: "03", title: "Mantenimiento", description: "Nos encargamos de la seguridad, actualizaciones y rendimiento de tu sitio web." },
+  { number: "03", title: "Mantenimiento Web", description: "Nos encargamos de la seguridad, actualizaciones y rendimiento de tu sitio web." },
   { number: "04", title: "SEO Técnico", description: "Optimizamos tu sitio para mejorar su visibilidad en buscadores y atraer más tráfico." },
   { number: "05", title: "Diseño Gráfico", description: "Diseñamos identidades visuales atractivas y materiales gráficos impactantes" },
 ];

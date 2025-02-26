@@ -23,15 +23,15 @@ const Banner = () => {
   return (
     <>
       <img
-        src="/image/background.webp"
+        src="/image/banner.webp"
         alt="Banner"
         className="absolute inset-0 object-cover w-full h-full -z-10"
       ></img>
 
-      <div className="absolute z-10 inset-0 bg-neutral-950 bg-opacity-70  md:bg-opacity-90 "
+      <div className="absolute z-10 inset-0 bg-neutral-950 bg-opacity-70  md:bg-opacity-70 "
         style={{
-          WebkitMaskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 10%)`,
-          maskImage: `radial-gradient(circle 200px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%)`,
+          WebkitMaskImage: `radial-gradient(circle 100px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 10%)`,
+          maskImage: `radial-gradient(circle 100px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%)`,
         }}></div>
 
 

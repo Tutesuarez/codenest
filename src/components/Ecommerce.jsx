@@ -22,7 +22,7 @@ const ServicioEcommerce = () => {
 
         <div className="cards_container_ecom grid md:grid-cols-3 gap-10 mt-12 container mx-auto md:px-20">
           {/* <!-- eCommerce --> */}
-          <div className="card_ecom bg-stone-800 p-6 rounded-2xl text-center justify-items-center shadow-lg">
+          <div className="card_ecom border-2 p-6 rounded-2xl text-center justify-items-center shadow-lg">
             <div className="justify-items-center">
               <FaShoppingCart size={50} className="item_ecom text-teal-400" />
             </div>
@@ -31,7 +31,7 @@ const ServicioEcommerce = () => {
           </div>
 
           {/* <!-- LMS --> */}
-          <div className="card_ecom bg-stone-800 p-6 rounded-2xl text-center  justify-items-center shadow-lg">
+          <div className="card_ecom border-2 p-6 rounded-2xl text-center  justify-items-center shadow-lg">
             <div className="justify-items-center">
               <FaGraduationCap size={50} className="item_ecom text-teal-400" />
             </div>
@@ -40,7 +40,7 @@ const ServicioEcommerce = () => {
           </div>
 
           {/* <!-- Desarrollo a medida --> */}
-          <div className="card_ecom bg-stone-800 p-6 rounded-2xl text-center justify-items-center shadow-lg">
+          <div className="card_ecom border-2 p-6 rounded-2xl text-center justify-items-center shadow-lg">
             <div className="justify-items-center">
               <FaWordpress size={50} className="item_ecom text-teal-400" />
             </div>
