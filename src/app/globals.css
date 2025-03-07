@@ -14,6 +14,20 @@
   padding: 0;
 }
 
+p::selection{
+  color: rgb(45, 212, 191);
+  background-color: rgb(17, 24, 34);
+}
+h1::selection{
+  color: rgb(45, 212, 191);
+}
+h2::selection{
+  color: rgb(45, 212, 191);
+}
+h3::selection{
+  color: rgb(45, 212, 191);
+}
+
 
 .titulo{
   font-family: 'Montserrat-bold';
@@ -24,3 +38,40 @@
   font-family:'Montserrat-Bold';
 }
 
+@media(min-width: 1920px){
+  .astronauta{
+    width: 50rem !important;
+  }
+
+  .error_title{
+    font-size: 200px !important;
+  }
+
+  .error_text{
+    font-size: 50px !important;
+  }
+
+  .error_btn{
+    font-size: 26px !important;
+  }
+
+}
+
+@media(min-width: 2560px){
+  .astronauta{
+    width: 60rem !important;
+  }
+
+  .error_title{
+    font-size: 200px !important;
+  }
+
+  .error_text{
+    font-size: 50px !important;
+  }
+
+  .error_btn{
+    font-size: 26px !important;
+    margin-top: 70px !important;
+  }
+}

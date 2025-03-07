@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import './ServicesContainer.css'
+import Link from "next/link";
 
 const steps = [
   { number: "01", title: "Desarrollo Web", description: "Creamos sitios web modernos, optimizados y adaptables a cualquier dispositivo a medida. Tiendas online, e-learning, landing pages" },
@@ -14,7 +15,7 @@ export default function ProcessSteps() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="w-full flex flex-col items-center py-10 sm:py-16 ">
+    <div className="w-full flex flex-col items-center py-10 xl:pt-0 md:py-16 ">
    
       <div className="container-services relative w-full md:max-w-6xl mt-0  sm:mt-10 flex flex-col md:flex-row md:justify-between items-center md:items-start">
 
@@ -26,6 +27,7 @@ export default function ProcessSteps() {
           onMouseLeave={() => setHoveredIndex(null)}
           animate={{ opacity: hoveredIndex === null || hoveredIndex === index ? 1 : 0.3 }}
           >
+               {/* <Link href={step.ref}> */}
             {/* Número */}
             <motion.span
               className="step-number  text-7xl  sm:text-9xl font-bold text-teal-400"
@@ -34,9 +36,8 @@ export default function ProcessSteps() {
             >
               {step.number}
             </motion.span>
+         
             
-          {/* Línea central */}
-          {/* <div className="absolute top-1/2 w-full border-t-2 border-stone-200 hidden md:block "></div> */}
             {/* Punto con línea */}
             <div className="relative flex items-center justify-center">
               <div className=" puntos w-4 h-4 bg-blue-500 rounded-full mt-2 hidden sm:block"></div>
@@ -48,6 +49,7 @@ export default function ProcessSteps() {
             <p className="step-description text-gray-400 mt-1 max-w-full sm:max-w-48 break-words whitespace-normal">{step.description}</p>
 
             </div>
+            {/* </Link> */}
           </motion.div>
         ))}
       </div>

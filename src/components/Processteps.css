@@ -1,0 +1,30 @@
+@media(min-width: 1920px) {
+
+    .icon_container{
+        width: 90px;
+        height: 90px;
+    }
+    .icon_process{
+        font-size: 40px;
+    }
+
+    .title__process_container{
+        max-width: 90%;
+    }
+
+    .title_process{
+        font-size: 30px;
+        
+
+    }
+    
+    .description_process{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .process_line{
+        top: 42px;
+    }
+
+    }

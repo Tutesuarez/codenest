@@ -58,7 +58,7 @@ const Pack=()=>{
             </div>
           </div>
 
-          <div className="text-center mt-10 md:mt-20">
+          <div className="text_pack_bottom text-center mt-10 md:mt-20">
             <RevealText >
               <p className="sub-text font-semibold text-lg md:text-xl">Tú te enfocas en hacer crecer tu negocio, nosotros nos encargamos de tu presencia digital.</p>
             </RevealText>

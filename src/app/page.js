@@ -1,5 +1,4 @@
 'use client';
-import Parallax from "../components/Paralax";
 import Banner from "@/components/banner";
 import Pack from "@/components/pack";
 import ContactContainer from "@/components/ContactContainer";
@@ -8,10 +7,13 @@ import Quehacemos from "@/components/about";
 import ServicesContainer from "@/components/ServicesContainer";
 import ProcessSteps from "@/components/Procecessteps";
 
+
+
 export default function Home() {
 
   return (
     <div className="min-h-screen">
+
       <div className="hidden md:block">
       </div>
       {/* Banner Principal */}
@@ -26,7 +28,7 @@ export default function Home() {
         </section>
 
         {/* Servicios */}
-        <section id="servicios" className="py-10 bg-gray-900 md:h-screen">
+        <section id="servicios" className="py-10 bg-gray-900 md:min-h-screen">
           <ServicesContainer/>
         </section>
 
@@ -34,12 +36,13 @@ export default function Home() {
           <ProcessSteps/>
         </section>
         {/*servicio 2 */}
-        <section id="servicios_b" className="p-5 md:py-5 bg-gray-900 text-stone-50 justify-items-center">
+        <section id="servicios_b" className="p-5 xl:pt-16 md:py-5 bg-gray-900 text-stone-50 justify-items-center">
           <ServicioEcommerce/>
         </section>
 
         {/* Promo para los que recien arranacan */}
-        <section id="promo" className="promo_section p-10 xl:p-5 md:p-20  md:h-screen bg-stone-100 text-stone-950 justify-items-center" >
+        <section id="promo" className="promo_section p-10 xl:p-5 xl:pt-16 md:p-20  md:min-h-screen bg-stone-100 text-stone-950 justify-items-center" >
+        
           <Pack />
         </section>
       {/* </Parallax> */}

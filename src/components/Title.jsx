@@ -18,7 +18,7 @@ const defaultAnimations = {
 
 export const AnimatedText = ({
   text,
-  el: Wrapper = "h1",
+  el: Wrapper = "h2",
   className,
   once,
   repeatDelay,

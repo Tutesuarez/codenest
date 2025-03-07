@@ -14,10 +14,10 @@ const Quehacemos=()=>{
         <>
         <div className="md:ps-20 md:grid md:grid-cols-2">
             <div className=" text-center my-10 md:mt-2 md:text-start md:ps-30 md:w-11/12 md:flex flex-col justify-items-start sm:justify-center">
-              <p className="section-title text-teal-400 font-bold mb-3">¿QUE HACEMOS?</p>
+              <p className="section-title text-sm text-teal-400 font-bold mb-3">¿QUE HACEMOS?</p>
               <RevealText>
-                <h2 className="title-aboutus text-start w-4/5 text-xl sm:text-2xl font-bold mt-8 md:text-6xl 2xl:text-4xl 2xl:w-5/6 md:mt-2">Transformamos tu presencia digital y llevamos tu negocio al siguiente nivel</h2>
-                <p className="text-aboutus text-start mt-10 md:text-2xl 2xl:text-xl">En <span className="font-bold  text-teal-400  md:mt-5 p-1 rounded-md">CODENEST</span>,creamos y optimizamos la identidad digital de tu negocio. Desde diseño y desarrollo web hasta mantenimiento, branding y SEO técnico, te ofrecemos soluciones completas para que tu empresa destaque en internet.
+                <h2 className="title-aboutus text-start w-4/5 text-xl sm:text-2xl xl:text-4xl 2xl:text-4xl  font-bold mt-8 md:text-6xl 2xl:w-5/6 md:mt-2">Transformamos tu presencia digital y llevamos tu negocio al siguiente nivel</h2>
+                <p className="text-aboutus text-start mt-10 md:text-xl 2xl:text-xl">En <span className="font-bold  text-teal-400  md:mt-5 p-1 rounded-md">CODENEST</span>,creamos y optimizamos la identidad digital de tu negocio. Desde diseño y desarrollo web hasta mantenimiento, branding y SEO técnico, te ofrecemos soluciones completas para que tu empresa destaque en internet.
                 </p>
                  <Link href='#contacto'><button className=" btn-aboutus 2xl:text-md mt-32  sm:mt-6 px-6 py-3 bg-teal-400 text-stone-950 hover:text-teal-400 hover:bg-inherit hover:border-2  hover:border-teal-400 font-semibold rounded-full shadow">CONTACTANOS</button></Link>
               </RevealText>

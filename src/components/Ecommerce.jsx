@@ -10,7 +10,7 @@ const ServicioEcommerce = () => {
   return (
     <>
       <div className="container_ecom  justify-items-center lg:mb-32">
-        <div className="container_title_ecom container mx-auto text-center md:text-left md:px-20">
+        <div className="container_title_ecom container mx-auto text-center lg:max-w-7xl md:px-20">
           <p className=" title-eco_serv text-teal-400 font-bold text-lg">TU PLATAFORMA OLNLINE</p>
           <div className="container_title_pack">
             <RevealTextSegundo>

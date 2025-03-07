@@ -17,11 +17,9 @@
     .menu-bignav{
         font-size: 30px;
     }
-    .container_navbar{
-        max-width: 1800px;
+    .cont_navbar{
+        max-width: 1800px !important;
     }
-
-   
 
 
   }
@@ -38,8 +36,8 @@
     .menu-bignav{
         font-size: 30px;
     }
-    .container_navbar{
-        max-width: 2000px;
+    .cont_navbar{
+        max-width: 2000px !important;
     }
 
    
