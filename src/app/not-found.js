@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import {SplashCursor} from '@/components/Splash.jsx';
+import {SplashCursor} from '@/components/Splash';
 import './globals.css'
 
 
@@ -9,7 +9,7 @@ import './globals.css'
 const NotFoundPage = () => {
   return (
     <div className="relative flex flex-col items-center justify-center h-screen bg-black text-white text-center overflow-hidden">
-      <SplashCursor />
+      {/* <SplashCursor/> */}
       {/* Fondo animado con estrellas */}
       <div className="absolute inset-0 bg-[url('/image/espacio.webp')] bg-cover bg-center "></div>
 
