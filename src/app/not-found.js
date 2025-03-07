@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import SplashCursor from '../components/splash.jsx';
+import SplashCursor from '../components/Splash';
 import './globals.css'
 
 
